@@ -1,0 +1,247 @@
+/* LOGIN */
+
+.login{
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(255,255,255);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.inline-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-username,
+.input-password{
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.input-password:focus,
+.input-username:focus{
+    outline: none;
+}
+
+.title-login{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.button-login{
+    margin-top: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* PROFILE */
+
+.profile{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+    padding: 50px 0;
+}
+
+.inline-profile{
+    display: flex;
+    gap: 50px;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.info-profile{
+    text-align: center;
+}
+
+.inline-info{
+    padding: 20px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.description{
+    padding-top: 20px;
+}
+
+/* HOME */
+
+.home{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.suggestions{
+    display: grid;
+    place-items: center;
+    height: 500px;
+}
+
+.suggestions div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.title-suggestions{
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.suggestions div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.button-follow,
+.button-switch{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 113, 179);
+    cursor: pointer;
+}
+
+.story-posts-container{
+    display: grid;
+    place-items: center;
+}
+
+.image-profile-posts{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.posts{
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    display: grid;
+    place-items: center;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.inline-posts{
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.image-posts{
+    width: 100%;
+    height: 600px;
+}
+
+.likes{
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes div{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.likes-inline{
+    display: flex;
+    gap:10px;
+}
+
+.likes-display{
+    padding: 10px 5px;
+    width: 100%;
+    display: grid;
+    place-items: left;
+}
+
+.red-heart{
+    color: rgb(209, 14, 40);
+}
+
+/* EXPLORE */
+
+.explore{
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+.image-overlay-explore{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+}
+
+.image-explore{
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 899px) {
+    .image-overlay-explore{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 849px) {
+    .suggestions{
+        display: none;
+    }
+}
+
+@media (max-width: 649px) {
+    .inline-profile{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 599px) {
+    .image-overlay-explore{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+@media (max-width: 499px) {
+    .posts{
+        width: 100%;
+    }
+
+    .image-posts{
+        height: 100%;
+    }
+}
